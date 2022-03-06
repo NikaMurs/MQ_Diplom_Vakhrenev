@@ -125,7 +125,7 @@ body {
 .trends-posts {
   display: flex;
   justify-content: space-between;
-   align-items: flex-end;
+  align-items: flex-end;
 }
 
 .trend-post {
@@ -228,7 +228,7 @@ body {
   margin-top: 64px;
   margin-bottom: 4px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .content {
@@ -632,7 +632,7 @@ body {
 
 .shop-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -841,23 +841,44 @@ body {
   font-weight: bold;
 }
 
+.form-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.form::after{
+    content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
 .form{
   width: 390px;
   margin: 0;
-  transform: translate(-50%, -50%);
-  position: fixed; 
-  top: 50%; 
-  left: 50%;
-  z-index: 2;
 }
 
-.icon-close{
-  width: 18px;
+.button-close{
+  margin-left: calc(100% - 18px) ;
   height: 18px;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 8px;
+  width: 18px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  background-image: url("../svg/form-x.svg");
 }
+
 
 .form-content{
   background-color: #ffffff;
@@ -986,17 +1007,6 @@ body {
 
 .form-button:hover {
   background-color: #000000;
-}
-
-.tint{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: 1;
 }
 
 }
@@ -1139,7 +1149,7 @@ body {
 }
 
 .content {
-  width: calc(100% - 315px);
+  width: calc(100% - 316px);
   margin-right: 35px;
 }
 
@@ -1756,22 +1766,42 @@ body {
   font-weight: bold;
 }
 
+.form-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.form::after{
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
 .form{
   width: 390px;
   margin: 0;
-  transform: translate(-50%, -50%);
-  position: fixed; 
-  top: 50%; 
-  left: 50%;
-  z-index: 2;
 }
 
-.icon-close{
-  width: 26px;
+.button-close{
+  margin-left: calc(100% - 26px) ;
   height: 26px;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 8px;
+  width: 26px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  background-image: url("../svg/form-x.svg");
 }
 
 .form-content{
@@ -1901,17 +1931,6 @@ body {
 
 .form-button:hover {
   background-color: #000000;
-}
-
-.tint{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: 1;
 }
 }
 
@@ -2359,7 +2378,7 @@ body {
 }
 
 .content-right {
-  width: 100%;
+  width: calc(100% - 31px);
 }
 
 .new-posts-head::after {
@@ -2880,30 +2899,52 @@ body {
   font-weight: bold;
 }
 
-.form{
-  width: 320px;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  position: fixed; 
-  top: 50%; 
-  left: 50%;
-  z-index: 2;
+.form-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.icon-close{
-  width: 18px;
+.form::after{
+    content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.form{
+  max-width: 320px;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.button-close{
+  margin-left: calc(100% - 18px) ;
   height: 18px;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 8px;
+  width: 18px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  background-image: url("../svg/form-x.svg");
 }
 
 .form-content{
   background-color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 90px;
-  padding-bottom: 54px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .form-title h2{
@@ -2923,7 +2964,7 @@ body {
   margin-top: 14px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 47px;
+  margin-bottom: 32px;
 }
 
 .form-question p{
@@ -2949,8 +2990,8 @@ body {
   outline: solid #e1d9bd 1px;
 }
 
-.form-question:nth-child(n+2){
-  margin-top: 37px;
+.form-question:nth-child(n+3){
+  margin-top: 32px;
 }
 
 .form-radio{
@@ -3025,17 +3066,6 @@ body {
 
 .form-button:hover {
   background-color: #000000;
-}
-
-.tint{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: 1;
 }
 }
 

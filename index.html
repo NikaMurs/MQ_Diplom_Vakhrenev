@@ -387,13 +387,15 @@
             </div>
          </div>
       </footer>
-      <section class="form _hidden">
-      <img class="icon-close" src="svg/form-x.svg">
+
+      <div class="form-center">
+      <form class="form _hidden" >
+      <button class="button-close"></button>
       <div class="form-content">
          <div class="form-title">
             <h2>Ваш фидбэк</h2>
          </div>
-         <article class="form-question">
+         <div class="form-question">
             <p>Как часто вы заходите на сайт?</p>
             <select class="form-select">
               <option>Почти каждый день</option>
@@ -401,8 +403,8 @@
               <option>Раз в несколько недель</option>
               <option>Несколько раз в год</option>
             </select>
-         </article>
-         <article class="form-question">
+         </div>
+         <div class="form-question">
             <p>Вы подписаны на e-mail рассылку?</p>
             <div class="form-radio">
                <input type="radio" id="emailChoice1" name="radio-email" value="yes">
@@ -410,14 +412,16 @@
                 <input type="radio" id="emailChoice2" name="radio-email" value="no">
                 <label class="form-radio-text form-radio-text-no" for="emailChoice2">Нет</label>
             </div>
-         </article>
-         <article class="form-question">
+         </div>
+         <div class="form-question">
             <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
             <textarea class="form-text" type="text" placeholder="Может, больше рецептов?"></textarea>
-         </article>
+         </div>
          <button class="form-button" type="submit">Отправить</button>
       </div>
-   </section>
-   <div class="tint _hidden"></div>
+   </form>
+   </div>
+
+
    </body>
 </html>
